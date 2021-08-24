@@ -1,0 +1,102 @@
+/* *{outline: 1px solid red;}; */
+
+
+*{
+  margin:0 ;
+  padding:0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  margin: 0;
+  background-color:#e4948b;
+  box-sizing: border-box; 
+  
+}
+
+
+.navigation-bar{
+  background-color: 	#fce3cb;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 3%;
+  padding-right: 3%;
+  
+}
+
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+} 
+
+nav a{
+  text-decoration: none;
+  color: #ae756c;
+  display: block;
+  padding: 20px;
+}
+
+nav a:hover{
+  background-color: #ae756c;
+  color:#fce3cb;
+}
+
+/* @media  screen and (min-width: 768 px)  {
+  
+} */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+
+ul{
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul li{ 
+  /*  flex: <grow> <shrink> <basis>; */
+  /* flex: 1 1 0;    */
+
+
+}
+
+
+/* logo */
+.logo-text{
+  font-family: 'Rampart One', cursive;
+  background-color: #ae756c;
+  color: #fce3cb;
+  font-size: 36px;
+
+}
+
+.picture{
+  height: 1200px;
+  background: url("../img/1.png") no-repeat center center/cover;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  
+}
+
+.fruit{
+  height: 2000px;
+  background: url("../img/fruit-wallpaper.jpeg") no-repeat center center/cover;
+}
+
+
+footer{
+  height: 200px;
+  background-color: #fce3cb;
+  /* background: url("../img/11.jpeg") no-repeat center center/cover; */
+}
+
+
+
+
+
+
