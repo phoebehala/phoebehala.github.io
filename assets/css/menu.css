@@ -1,0 +1,259 @@
+/* *{outline: 1px solid red;}; */
+
+
+*{
+    margin:0 ;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+  
+  html,body{
+    margin: 0;
+    height: 100%;
+    background-color:#e4948b;
+    background-color:#fce3cb;
+    /* background: url("../img/fruit-wallpaper.jpeg") no-repeat center center/cover; */
+    box-sizing: border-box;
+    line-height: 1.7em; 
+    color: #ae756c;
+    
+    
+  }
+  
+  
+  .navigation-bar{
+    background-color: 	#fce3cb;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+  }
+  
+  
+  nav ul{
+    list-style-type: none;
+    padding: 0;
+  } 
+  
+  nav a{
+    text-decoration: none;
+    color: #ae756c;
+    display: block;
+    padding: 20px;
+  }
+  
+  nav a:hover{
+    background-color: #ae756c;
+    color:#fce3cb;
+  }
+  
+  /* @media  screen and (min-width: 768 px)  {
+    
+  } */
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  
+  
+  ul{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  ul li{ 
+    /*  flex: <grow> <shrink> <basis>; */
+    /* flex: 1 1 0;    */
+  
+  
+  }
+  
+  
+  /* logo */
+  .logo-text{
+    font-family: 'Rampart One', cursive;
+    background-color: #ae756c;
+    color: #fce3cb;
+    font-size: 36px;
+  
+  }
+
+
+
+
+/* section 1 - procedure */
+  .procedure{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: white; */
+  }
+
+  .step{
+    
+    margin-top: 100px;
+    width: 25%;
+    border: 1px;
+    border-style: double;
+    border-color: #ae756c;
+    border-width: 3px;
+    border-radius: 10px; 
+
+  }
+
+  .step-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
+  .step-right-inside{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+  .stuff{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+
+/* manu */
+  .menuDetails{
+      margin-left: 10%;
+      margin-right: 10%;
+      /* background-color: white; */
+  }
+
+  .menuDetails h1{
+       margin-bottom: 20px;
+  }
+
+  .category img{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border-style: groove;
+      border-color:  #ae756c;
+      
+    }
+
+    .milk-photo img  , .fresh-photo img, .hot-photo img{
+       object-fit:cover;
+       
+    }
+
+  .category {
+      background-color: skyblue;
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  .items{
+      /* flex: <grow> <shrink> <basis>; */
+      /* flex: 1 1 30%; */
+      background-color: yellow;
+      width: 33%;
+      
+
+  }
+
+  .prices{
+      /* background-color: sandybrown; */
+    /* flex: <grow> <shrink> <basis>; */
+      /* flex: 1.2 0 10px; */
+      
+      display: flex;
+      justify-content: space-around;
+  }
+  .pricesList{
+    align-self: flex-end;
+  }
+
+  .prices-size-small{
+      margin-right: 30px;
+       
+  }
+
+  .pricesList{
+    background-color: teal;
+    text-align: center;
+  }
+
+
+
+
+
+/* sugar bar */
+.progress{
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    border: 2px solid #ae756c;
+    text-align: center;
+    line-height: 22px;
+}
+
+.progress .percent{
+    width: 50%;
+    text-align: right;
+    border-radius: 10px;
+    border: 2px solid #ae756c;
+    border-right: 2px;
+    background-color: #ae756c;
+    color: #fce3cb;
+    color: black;
+}
+
+
+
+  .btn-goToSpecial {
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    font-size: small;
+    background-color: #F17E0A;
+    border-radius: 30px;
+    border: none;
+  }
+  
+  .btn-goToSpecial:hover {
+        background-color: #ce6a07;
+      
+    }
+
+   .btn-goToSpecial a{
+        text-decoration: none;
+
+    }
+
+
+
+  
+
+  
+ 
+
+  
+
+
+
+
+
+
+  
