@@ -79,6 +79,8 @@ ul li{
 
 }
 
+
+
 .pic1{
 
   height: 100vh;
@@ -102,7 +104,6 @@ ul li{
 
 .pic1 , .pic2, .pic3{
   position: relative;
-  background-position: center;
   opacity: 0.8;
   background-attachment: fixed;
   background-position: center top; 
@@ -149,8 +150,6 @@ ul li{
 .section-style2{
   
   background-color:#fce3cb;
-
-
   
 }
 

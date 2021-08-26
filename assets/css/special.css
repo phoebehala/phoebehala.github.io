@@ -120,21 +120,21 @@
   /* set photo */
 
   .panels div.sp1{
-    background: url("../img/drinkCopy1.jpeg");
+    background: url("../img/drink1.png");
     background-size: contain ;
     background-repeat: no-repeat;
     
   }
 
   .panels div.sp2{
-    background: url("../img/drinkCopy2.jpeg");
+    background: url("../img/drink2.png");
     background-size: contain ;
     background-repeat: no-repeat;
     
   }
 
   .panels div.sp3{
-    background: url("../img/drinkCopy3.jpeg");
+    background: url("../img/drink3.png");
     background-size: contain ;
     background-repeat: no-repeat;
     
