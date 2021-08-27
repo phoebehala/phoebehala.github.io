@@ -14,36 +14,78 @@
 </head>
 <body>
     <header>
-        <div class="navigation-bar">
+
+        <!-- top bar -->
+        <div class="top-bar">
             <nav>
-                <ul class="logo">
-                    <li><a href="" class="logo-text">eaTea house </a></li> 
+                <ul class="top-left-logo">
+                    <li><a class="logo-text-eaTea">eaTea<img class="logo-img" height="50px" src="assets/img/12.png"></a></li> 
+                    <li class="top-left-logo-btm"><a href="" class="logo-text-house"> house </a></li> 
+               
                 </ul>
-                <ul>
-                    <li><a href="landing.html">eaTea house</a></li>
-                    <li><a href="landing.html#about-section">About us</a></li>
-                    <li><a href="menu.html">Menu</a></li>
+                <ul class="top-right-content">
+                    
                     <li><a href="landing.html#locations-section">Locations</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="special.html">Specials</a></li>
+                    <li><a href="landing.html#about-section">About us</a></li>
+                    <li><a href="landing.html">eaTea house</a></li>
                 </ul>
             </nav>
+        </div>  
+
+
+        <!-- slide bar -->
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"><img src="assets/img/slideBar-button.png" height="40px"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+
+        <div class="sidebar">
+        
+            <ul>
+                <li><a href=""><i class="fas fa-qrcode"></i></a></li>
+                <li><a href="landing.html"><i class="fas fa-qrcode"></i>eaTea House</a></li>
+                <li><a href="landing.html#about-section"><i class="fas fa-qrcode"></i>About us</a></li>
+                <li><a href="menu.html"><i class="fas fa-link"></i>Menu</a></li>
+                <li><a href="special.html"><i class="fas fa-link"></i>Specials</a></li>
+                <li><a href="landing.html#locations-section"><i class="fas fa-stream"></i>Locations</a></li> 
+                <div> 
+                    <a href="https://www.facebook.com/pages/create/?ref_type=site_footer" target="_blank"><img class="fb" height="20px" src="assets/img/fb.png"></a>
+                    <a href="http://twitter.com" target="_blank"><img class="ti" height="20px" src="assets/img/ti.png"></a>
+                    <a href="http://instagram.com" target="_blank"><img class="ig" height="20px" src="assets/img/ti.png"></a>
+                    <a href="mailto:someone@yoursite.com" id="mymail"><img class="ig" height="20px" src="assets/img/mymail.png"></a>
+                </div>        
+            </ul>
+
         </div>       
-    </header>   
+
+
+
+    </header>
+
+
+
+
 
 
     <!-- how to order -->
-    <section class="procedure">
+    <article class="new">
+        <section class="procedure">
+        
         <!-- step1 -->
          
         <div class="step step1 step-outer-border">
             <div class="step-inner-border">
-               <h2><img src="assets/img/12.png" alt="" width="40px">STEP 1</h2>
+               <h2><img src="assets/img/12.png" alt="" width="35px">STEP 1</h2>
    
                <div class="step-content">
-                   <div class="step1-left">                 
-                    <p>CHOOSE SIZE</p> 
+                   <div class="step-left">                 
+                    <h4>CHOOSE SIZE</h4> 
                    </div>
    
-                   <div class="step1-right">
+                   <div class="step-right">
                        <div class="step-right-inside small-size">
                            <div class="stuff">
                                <img src="assets/img/drinkSize.png" alt="" width="40px">
@@ -58,7 +100,7 @@
                        </div>
                        </div>
    
-                       
+                      
    
                    </div>
    
@@ -74,7 +116,7 @@
                <div class="step-content">
                    <div class="step-left">
                   
-                       <p>ICE LEVEL</p> 
+                       <h4>ICE LEVEL</h4> 
                     </div>
     
                     <div class="step-right">
@@ -94,10 +136,9 @@
                             <p>LESS ICE</p>
                         </div>
                         <div class="less-snowflacks">
-                            <img src="assets/img/snowFlacks.png" alt="" width="20px">
-                             <img src="assets/img/snowFlacks.png" alt="" width="20px">
-                             <img src="assets/img/snowFlacks.png" alt="" width="20px">
-                        
+                           <img src="assets/img/snowFlacks.png" alt="" width="20px">
+                           <img src="assets/img/snowFlacks.png" alt="" width="20px">
+                           <img src="assets/img/snowFlacks.png" alt="" width="20px">
                             
                         </div>
     
@@ -106,7 +147,7 @@
                             <p>NO ICE</p>
                         </div>
                         <div class="less-snowflacks">
-                            <img src="assets/img/snowFlacks.png" alt="" width="20px">
+                           <img src="assets/img/snowFlacks.png" alt="" width="20px">
                          
                         </div>
     
@@ -125,7 +166,7 @@
                <div class="step-content">    
                    <div class="step-left">
                    
-                       <p>SUGAR LEVEL</p> 
+                       <h4>SUGAR LEVEL</h4> 
                    </div>
    
                    <div class="step-right">
@@ -169,155 +210,201 @@
            </div> 
            </div>
     </section>
+    </article>
+
+
+
 
 <!-- menu -->
-    <section class="menuDetails">
-<!-- menu-classic -->         
-        <div class="category classicTea">
-            <div class="classic-photo"><img src="assets/img/tea.jpeg" alt="" ></div>
-            <div class="items">
-                <h1>eaTea CLASSIC</h1>
-                <h3>eaTea BLACK TEA</h3>
-                <h3>eaTea OOLONG TEA</h3>
-                <h3>eaTea GREEN TEA</h3>
-                <h3>TEATOK JASMINE GREEN TEA</h3>
-                
-                
-            </div>
+<article class="menuDetails manu-outer-border">
+    <section class=" manu-inner-border">
 
-            <div class="prices">
-                <div class=" pricesList prices-size-small">
-                    <h1>16 OZ</h1>
-                    <h3>$3.00</h3>
-                    <h3>$3.00</h3>
-                    <h3>$3.00</h3>
-                    <h3>$3.00</h3>
+<!-- menu-classic -->   
+
+        <div class="price-table">
+               
+
+            <div class="pricing-card">
+                <div class="menu-phto classic-photo"><img src="assets/img/tea.jpeg" alt="" ></div>
+                <h3 class="pricing-card-header">&mdash; eaTea MILK TEA &mdash;</h3> 
+    
+                <div class="itemes-list">
+                    <ul>
+                        <li>eaTea BLACK TEA</li>
+                        <li>eaTea OOLONG TEA</li>
+                        <li>eaTea GREEN TEA</li>
+                        <li>TEATOK JASMINE GREEN TEA</li>
+
+                    
+                    </ul>
                 </div>
-                <div class=" pricesList prices-size-large">
-                    <h1>24 OZ</h1>
-                    <h3>$4.00</h3>
-                    <h3>$4.00</h3>
-                    <h3>$4.00</h3>
-                    <h3>$4.00</h3>
+    
+                <div class="price-list">
+                    <div class="price-list-for-small">
+                        <div class="size-of-small">16oz</div>
+                        <div class="price-of-small"><sup>$</sup>3.00 </div>
+                    </div>
+                    <div class="price-list-for-large">
+                        <div class="size-of-large">24oz</div>
+                        <div class="price-of-large"><sup>$</sup>4.00 </div>
+                    </div>  
                 </div>
                 
+                
             </div>
-        
-        </div>
-        
 
 <!-- menu-milk -->  
-        <div class="category milkTea">
-            <div class="milk-photo"><img src="assets/img/milktea.jpeg" alt=""   ></div>
-            <div class="items">
-                <h1>eaTea MILK TEA</h1>
-                <h3>eaTea MILK TEA</h3>
-                <h3>OOLONG MILK TEA</h3>
-                <h3>JASMIE GREEN MILK TEA</h3>
-                <h3>CARAMEL MILK TEA MILK TEA</h3>
-                <h3>CLOUD SEASALT CARAMEL MILK TEA</h3>
-            </div>
 
-            <div class="prices">
-                <div class=" pricesList prices-size-small">
-                    <h1>16 OZ</h1>
-                    <h3>$3.50</h3>
-                    <h3>$3.50</h3>
-                    <h3>$3.50</h3>
-                    <h3>$3.50</h3>
-                    <h3>$3.50</h3>
+            <div class="pricing-card">
+                <div class="menu-phto milk-photo"><img src="assets/img/milktea.jpeg" alt="" ></div>
+                <h3 class="pricing-card-header">&mdash; eaTea MILK TEA &mdash;</h3> 
+    
+                <div class="itemes-list">
+                    <ul>
+                        <li>eaTea MILK TEA</li>
+                        <li>eaTea OOLONG MILK TEA</li>
+                        <li>CARAMEL MILK TEA MILK TEA</li>
+                        <li>CLOUD SEASALT CARAMEL MILK TEA</li>
+
+                    
+                    </ul>
                 </div>
-                <div class=" pricesList prices-size-large">
-                    <h1>24 OZ</h1>
-                    <h3>$4.25</h3>
-                    <h3>$4.25</h3>
-                    <h3>$4.25</h3>
-                    <h3>$4.25</h3>
-                    <h3>$4.25</h3>
+    
+                <div class="price-list">
+                    <div class="price-list-for-small">
+                        <div class="size-of-small">16 oz</div>
+                        <div class="price-of-small"><sup>$</sup>3.50 </div>
+                    </div>
+                    <div class="price-list-for-large">
+                        <div class="size-of-large">24 oz</div>
+                        <div class="price-of-large"><sup>$</sup>4.25 </div>
+                    </div>  
                 </div>
                 
+                
             </div>
-        
-        </div>
-
-
 
 
 <!-- menu-fresh -->  
-    <div class="category freshTea">
-        <div class="fresh-photo"><img src="assets/img/fresh.jpeg" alt=""   ></div>
-        <div class="items">
-            <h1>eaTea FRESH TEA</h1>
-            <h3>MANGO GREEN TEA</h3>
-            <h3>GRAPEFRUIT GREEN TEA</h3>
-            <h3>LYCHEE GREEN TEA</h3>
-            <h3>STRAWBERRY LEMON GREEN TEA</h3>
-            
-        </div>
 
-        <div class="prices">
-            <div class=" pricesList prices-size-small">
-                <h1>16 OZ</h1>
-                <h3>$4.00</h3>
-                <h3>$4.00</h3>
-                <h3>$4.00</h3>
-            </div>
-            <div class=" pricesList prices-size-large">
-                <h1>24 OZ</h1>
-                <h3>$5.00</h3>
-                <h3>$5.00</h3>
-                <h3>$5.00</h3>
-            </div>
-            
-        </div>
+            <div class="pricing-card">
+
+                <div class="menu-phto fresh-photo"><img src="assets/img/fresh.jpeg" alt=""  ></div>
+                <h3 class="pricing-card-header">&mdash; eaTea FRESH TEA &mdash;</h3> 
+
+                <div class="itemes-list">
+                    <ul>
+                        <li>MANGO GREEN TEA</li>
+                        <li>GRAPEFRUIT GREEN TEA</li>
+                        <li>LYCHEE GREEN TEAA</li>
+                        <li>STRAWBERRY LEMON GREEN TEA</li>
+
+                    
+                    </ul>
+                </div>
     
-    </div>
+                <div class="price-list">
+                    <div class="price-list-for-small">
+                        <div class="size-of-small">16 oz</div>
+                        <div class="price-of-small"><sup>$</sup>4.00 </div>
+                    </div>
+                    <div class="price-list-for-large">
+                        <div class="size-of-large">24 oz</div>
+                        <div class="price-of-large"><sup>$</sup>5.00 </div>
+                    </div>  
+                </div>
+                
+                
+            </div>
+
 
 
 <!-- menu-hot -->  
-    <div class="category hotTea">
-        <div class="hot-photo"><img src="assets/img/hotTea.jpeg" alt=""   ></div>
-        <div class="items">
-            <h1>eaTea HOT TEA</h1>
-            <h3>MANGO GREEN TEA</h3>
-            <h3>GRAPEFRUIT GREEN TEA</h3>
-            <h3>LYCHEE GREEN TEA</h3>
-        </div>
 
-        <div class="prices">
-            <div class=" pricesList prices-size-small">
-                <h1>16 OZ</h1>
-                <h3>$4.00</h3>
-                <h3>$4.00</h3>
-                <h3>$4.00</h3>
-            </div>
-            <div class=" pricesList prices-size-large">
-                <h1>24 OZ</h1>
-                <h3>$5.00</h3>
-                <h3>$5.00</h3>
-                <h3>$5.00</h3>
-            </div>
-            
-        </div>
+
+            <div class="pricing-card">
+                <div class="menu-phto hot-photo"><img src="assets/img/hotTea.jpeg" alt="" ></div>
+ 
+                <h3 class="pricing-card-header">&mdash; eaTea HOT TEA &mdash;</h3> 
     
-    </div>
+                <div class="itemes-list">
+                    <ul>
+                        <li>MANGO GREEN TEA</li>
+                        <li>HOCOLATE GREEN TEA</li>
+                        <li>GRAPEFRUIT GREEN TEA</li>
+                        <li>TRAWBERRY LEMON GREEN TEA</li>
+                        <li>LYCHEE GREEN TEA</li>
+                        
 
-
-
-
-
-    <!-- go to special menu -->
-    <div>
-        <button class="btn-goToSpecial"><a href="special.html">see more detail about our SPECIAL</a></button>
-
-    </div>
-
-
-    </section>
-
-
-    <footer>
+                    
+                    </ul>
+                </div>
+    
+                <div class="price-list">
+                    <div class="price-list-for-small">
+                        <div class="size-of-small">16 oz</div>
+                        <div class="price-of-small"><sup>$</sup>4.00 </div>
+                    </div>
+                    <div class="price-list-for-large">
+                        <div class="size-of-large">24 oz</div>
+                        <div class="price-of-large"><sup>$</sup>5.00 </div>
+                    </div>  
+                </div>
+                
+                
+            </div>
        
+    </section>
+</article>
+
+   
+
+
+
+
+
+
+
+
+
+
+   <!--footer-->
+    <footer>
+        <!-- Parallax --><!--footer--><!--info-->
+        <section class="info-section">
+            <div class="info-content">          
+                <div class="info-content-1-of-3 open-hour">
+                    <h3>Open Hour</h3>
+                    <p>Mon.~ Fri. 10 AM ~ 10 PM</p>
+                    <p>Sat. 11 AM ~ 11 PM</p>
+                    <p>Sun. 11 AM ~ 19 PM</p>
+                </div>
+        
+                <div class="info-content-1-of-3 address">
+                    <h3>Taunton, GA</h3>
+                    <p><i>TEL</i> : 508-593-4845</p>
+                    <p> <i>ADDRESS</i> : 296 Diversey Lane, Taunton, GA</p>
+                    <p><i>Email</i> :<a href="mailto:contact@interiord.com" id="mymail">contact@interiord.com</a> </p>
+                </div>
+        
+                <div class="info-content-1-of-3 follow-us">
+                    <h3>Follow us</h3>
+                    <div class="details">
+                        <a href="http://facebook.com" target="_blank"><img class="fb" height="20px" src="assets/img/fb.png"></a>
+                    <a href="http://twitter.com" target="_blank"><img class="ti" height="20px" src="assets/img/ti.png"></a>
+                    <a href="http://instagram.com" target="_blank"><img class="ig" height="20px" src="assets/img/ti.png"></a>
+                    <a href="mailto:someone@yoursite.com" id="mymail"><img class="ig" height="20px" src="assets/img/mymail.png"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+         <!-- Parallax --><!--footer--><!-- copyRight -->
+        <div class="copyRight-message">
+                <p>
+                    © 2020  eaTea shop. All Rights Reserved.
+                </p>
+            </div>
     </footer>
 
     

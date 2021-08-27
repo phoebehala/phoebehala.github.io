@@ -11,7 +11,9 @@
 body{
     height: 1000px;
     background-color:#e4948b; 
-    color: #50694c;
+    background-color:white; 
+   
+    color: #ae756c;
 }
 
 
@@ -79,8 +81,11 @@ body{
 
 .top-bar{ 
     background-color: #fce3cb;
+    /* background-color: #50694c; */
+    border-top: 2px solid white;
+    border-bottom:3px solid rgb(174, 117, 108);
 
-    height: 100px;
+    height: 110px;
     
     box-sizing: border-box;
 
@@ -88,11 +93,13 @@ body{
 	top: 0;
     width: 100%;
     z-index: 1;
+
    
 }
 
 .top-bar .top-left-logo{ 
     margin-left: 12%;
+    margin-top: 5px;
 }
 
 .top-bar .top-right-content{
@@ -102,7 +109,11 @@ body{
 .top-right-content li a, .top-left-logo li a{
     text-decoration: none;
     color: #ae756c;
+    /* color: #fce3cb; */
+
+    
 }
+
 
 
   
@@ -148,7 +159,10 @@ nav a:hover{
 
 /* Smartphone */
 @media (max-width: 769px){
-
+    .top-right-content li a{       
+        display: none;  
+    }
+    
 }
 
 /* END -- top bar */
@@ -171,8 +185,9 @@ nav a:hover{
 }
 
 
-/* Tablet */
-@media (min-width: 770px) and (max-width: 1239px){
+/* Tablet (min-width: 770px) and (max-width: 1239px) */
+/* Smartphone   (max-width 769px)*/
+@media (max-width: 1239px){
 
 
     .sidebar{ 
@@ -180,9 +195,12 @@ nav a:hover{
         right: -250px;
         width: 250px;
         height: 100%;
-        background:  #50694c;
+        /* background:  #50694c; */
+        background: #ae746b;
         transition: all .5s ease;
         z-index: 11;
+
+        border-left: 1px solid #e4948b;
          
     }
     
@@ -198,8 +216,10 @@ nav a:hover{
         padding-top: 10px;
         padding-left: 40px;
         box-sizing: border-box;
-        border-top: 1px solid rgba(255, 255, 255,0.1);
-        border-bottom:1px solid black;
+        border-bottom:1px solid rgba(0,0,0,0.8);
+        border-top: 1px solid rgb(228,148,139);
+        
+        
         transition: .4s;
     
     }
@@ -231,11 +251,12 @@ nav a:hover{
     }
 
     label #cancel{
-        background: #98ad6f;
+        /* background: #98ad6f; */
+        background: #fce3cb;
     }
     
     label #btn{
-        right: 260px;
+        right: 15%;
         top: 25px;
         font-size: 35px;
         color: white ;
@@ -279,16 +300,21 @@ nav a:hover{
 
 
 
-
-/* Smartphone */
-@media (max-width: 769px){
-    /* same as Tablet  */
-}
-
-
 /* END -- slide bar */
+/* END -- header */
 
 
+
+
+
+/* font */
+
+/* .panels h3  .special-title .about-title{
+    text-align: center;
+    color: #fce3cb;
+    text-shadow: 1px 3px #ae756c;
+    font-size: 28px;
+} */
 
 
 
@@ -308,7 +334,7 @@ nav a:hover{
   }
   
   .pic2{
-    height: 600px;
+    height: 900px;
     background: url("../img/fruit-wallpaper.jpeg") no-repeat center center/cover;
     /* transform: scaleY(-1); */
   }
@@ -333,7 +359,7 @@ nav a:hover{
   .section{
     text-align: center;
     padding: 20px 50px;
-    color: #50694c	;
+   
   }
 
 
@@ -388,14 +414,17 @@ nav a:hover{
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #e4948b;
     background-color: white;
+
+    
+   
   }
 
   .step{ 
     
-    width: 28%;
+    width: 31%;
     border: 1px;
     border-style: double;
     border-color: #ae756c;
@@ -409,13 +438,21 @@ nav a:hover{
 
     border: #ae756c solid;
     border-width: 6px 8px 8px 1px;
+
+    
 }
 
 .step-inner-border{
+    
     border-radius: 10px; 
     border:  white solid;
     border-width: 8px 4px 4px 10px;
-    height: 230px; 
+    height: 300px; 
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    
 }
 
 
@@ -424,7 +461,16 @@ nav a:hover{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    margin-top: 20px;
+
+    
+
 }  
+
+.step-right{
+    flex-grow: 1.5;
+}
 
   
   .step-right-inside{
@@ -434,6 +480,8 @@ nav a:hover{
     align-items: center;
     justify-content: space-around;
 
+    flex-wrap: nowrap;
+
   }
 
   .stuff{
@@ -441,6 +489,22 @@ nav a:hover{
     flex-direction: row;
     align-items: center;
   }
+
+  .step-right .bigger-size,  
+  .step-right .less-ice, .step-right .no-ice,
+  .step-right .half-sugar, .step-right .regular-sugar{
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+
+  .step-left h4{
+      margin-bottom: 10px;
+  }
+
+  .step h2{
+      margin-top: 5px;
+  }
+
 
 
 
@@ -469,6 +533,7 @@ nav a:hover{
 @media (max-width: 769px){
     .procedure{
         display: unset;
+        
     }
     .section{
         padding: 0;
@@ -477,16 +542,70 @@ nav a:hover{
         
         width: 50%;
         margin: auto;
-
-        padding-top: 10px;
-        padding-bottom: 30px;
         margin-bottom: 50px;
        
     }
+   
+
+}
+
+/* END of step */
+
+
+
+
+
+
+
+
+
+/* special section */
+
+
+.special-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fce3cb;
+    /* background-color: #e4948b; */
+    text-shadow: 3px 3px #ae756c;
+    /* text-shadow: 1px 3px #98ad6f; */
+    font-size: 30px; 
+
+    padding-top: 150px;
     
+        
+      
+}
+
+.special{
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.special .special-photo{
+    margin: 20px 0;
 }
 
 
+/* Tablet */ 
+@media (min-width: 770px) and (max-width: 1239px){
+    .pic2{
+        height: 1500px;
+    }
+}
+
+
+ /* Smartphone */
+ @media (max-width: 769px){
+    .pic2{
+        height: 1800px;
+    }
+}
+
+/* END of special-section */
 
 
 
@@ -496,11 +615,21 @@ nav a:hover{
   .section-about{ 
     /* background-color: rgba(228, 148, 139, 1)	; */
     background-color: white	; 
-    padding-top: 30px; 
+    padding-top: 50px; 
+    padding-bottom: 50px;
+
  }
  
  .about-title{
      margin-bottom: 30px;
+
+     text-align: center;
+     color: #ae756c;
+     text-shadow: 1px 1px #98ad6f;
+     font-size: 28px;
+        
+    
+    
  }
  .about{
    display: flex;
@@ -527,7 +656,9 @@ nav a:hover{
     }
     .about-content{
         width: 50%;
-        margin: auto;
+        margin:auto;
+        margin-top: 50px;
+
     }
     
 }
@@ -541,6 +672,7 @@ nav a:hover{
 
 .flipping{
     padding: 100px 10%;
+    
   }
   
   .panels h3{
@@ -548,6 +680,8 @@ nav a:hover{
     margin-bottom: 20px;
     color: #fce3cb;
     /* background-color: #e4948b; */
+    text-shadow: 1px 3px #ae756c;
+    font-size: 28px;
   }
   
   .flipping .back{
@@ -570,6 +704,12 @@ nav a:hover{
   display: block;
   box-sizing: border-box;
   float: left;
+  }
+
+  .panels::after{
+      content: "";
+      display: block;
+      clear: both;
   }
   
   .panels li div{ 
@@ -606,6 +746,20 @@ nav a:hover{
      100%{transform: rotateY(90deg)}
   }
 
+
+  /* Smartphone -locations */
+@media (max-width: 769px){
+    .pic3{
+        height: 1000px;
+      }
+
+      .panels li{
+          width: 100%;
+        /* float: unset; */
+      }
+}
+
+  
  /* END -locations */
 
 
@@ -620,6 +774,9 @@ nav a:hover{
 
 .info-section{
     background-color:#fce3cb;
+    border-top: 2px solid white;
+    border-bottom: 2px solid #ae756c;;
+    
 }
 .info-content{
     
@@ -668,7 +825,14 @@ nav a:hover{
 
 .info-content-1-of-3 h3{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.info-content-1-of-3 p{
+    margin-bottom: 5px;
+}
+.address a{
+    text-decoration: none;
+    color: #ae756c;
 }
 .details{
     display: flex;
@@ -679,6 +843,11 @@ nav a:hover{
 
 /* Smartphone */
 @media (max-width: 769px){
+
+    .info-section{
+        border-top: unset;   
+    }
+
     .info-content{
         display: unset;
     }
@@ -734,10 +903,16 @@ nav a:hover{
   
   
 .copyRight-message{
-    height: 30px;
+    height: 40px;
     background-color: #fce3cb;
+    background-color: white;
+    /* background-color: #50694c; */
+    color: #50694c;
+    font-size: 14px;
+    font-weight: lighter;
     text-align: center;
     margin: auto;
+    padding-top: 40px; 
     
     
 } 
