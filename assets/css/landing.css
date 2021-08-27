@@ -277,6 +277,8 @@ nav a:hover{
         color: teal;
         padding: 4px 9px;
         transition: all .5s ease;
+
+        position: fixed;
     }
     
     /* set value for .sidebar which is beneath #check in the html */
@@ -373,38 +375,7 @@ nav a:hover{
     
   }
   
-  .texting{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    text-align: center;
-    color: red;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    font-size: 30px;
   
-  }
-  
-  
-  .texting .texborder{
-    
-    color: #50694c;
-    opacity: .80;
-    padding: 25px;
-    background:
-          /* top, transparent black, faked with gradient */ 
-          linear-gradient(
-            rgba(252, 227, 203, 0), 
-            rgba(252, 227, 203, 0.3), 
-            rgba(252, 227, 203, 1),
-            rgba(252,227,203, 0.3),
-            rgba(252,227,203, 0)
-          ),
-          url('../img/back-customers.jpg') bottom;
-      background-size: cover;
-      /* filter: brightness(80%); */
-  
-  }
 
 
 
@@ -540,7 +511,7 @@ nav a:hover{
     }
     .step{
         
-        width: 50%;
+        width:60%;
         margin: auto;
         margin-bottom: 50px;
        
@@ -548,6 +519,15 @@ nav a:hover{
    
 
 }
+
+/* Smartphone (iPhone 11 pro max) */
+@media (max-width: 469px){
+    .step{
+        width:80%;
+    }
+    
+}
+
 
 /* END of step */
 
@@ -602,6 +582,13 @@ nav a:hover{
  @media (max-width: 769px){
     .pic2{
         height: 1800px;
+    }
+}
+
+/* Smartphone (iPhone 11 pro max) */
+@media (max-width: 469px){
+    .pic2{
+        height: 3300px;
     }
 }
 

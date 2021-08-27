@@ -219,6 +219,9 @@ nav a:hover{
 
   .sidebar{ 
       position: fixed;
+
+      top: 0px;
+
       right: -250px;
       width: 250px;
       height: 100%;
@@ -304,6 +307,8 @@ nav a:hover{
       color: teal;
       padding: 4px 9px;
       transition: all .5s ease;
+
+      position:fixed;
   }
   
   /* set value for .sidebar which is beneath #check in the html */
@@ -351,14 +356,14 @@ main{
 
 
 /* How to order - 3 stpes */
-.new{
-  margin-top: 100px;
-  
-  
-}
 
+
+
+.procedure::before{
+  margin-bottom: 200px;
+}
 .procedure{
-  
+  margin-top: 200px;
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
@@ -491,7 +496,7 @@ main{
   }
   .step{
       
-      width: 50%;
+      width:60%;
       margin: auto;
       margin-bottom: 50px;
      
@@ -503,6 +508,17 @@ main{
  
 
 }
+
+
+/* Smartphone (iPhone 11 pro max) */
+@media (max-width: 469px){
+  .step{
+      width:80%;
+  }
+  
+}
+
+
 
 /* END of step */
 
@@ -621,6 +637,12 @@ main{
   
 }
 
+/* Tablet */ 
+@media (min-width: 770px) and (max-width: 1239px){
+  .price-list{
+    width: 60%;
+  }
+}
 
 
 

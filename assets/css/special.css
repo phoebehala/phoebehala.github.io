@@ -150,7 +150,7 @@ nav ul{
 
 nav .top-right-content li{
   margin-top: 40px;
-  border-left:double #fce3cb;
+  border-left:double #ae756c;
 }
 
 
@@ -279,6 +279,7 @@ nav a:hover{
   label #cancel{
       /* background: #98ad6f; */
       background: #fce3cb;
+
   }
   
   label #btn{
@@ -303,6 +304,8 @@ nav a:hover{
       color: teal;
       padding: 4px 9px;
       transition: all .5s ease;
+
+      position: fixed;
   }
   
   /* set value for .sidebar which is beneath #check in the html */
