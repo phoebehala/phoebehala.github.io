@@ -481,7 +481,6 @@ nav a:hover{
 
 
 
-
 /* sugar bar */
 .progress{
   width: 100%;
@@ -493,15 +492,16 @@ nav a:hover{
 }
 
 .progress .percent{
-  height: 20px;
+  height: 80px;
   text-align: right;
   border-radius: 6px;
   border-right: 2px;
   background-color: #ae756c;
-  color: #fce3cb;
+  
   color: black;
 
 }
+
 
 /* Smartphone -steps */
 @media (max-width: 769px){
