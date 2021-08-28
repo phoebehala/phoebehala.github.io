@@ -370,13 +370,42 @@ nav a:hover{
 
 
 
-
-.section-style2{
-
-  background-color:#fce3cb;
- 
-  
+/* ?????    have a drink and lift your spirit*/
+/* .texting{
+  position:absolute;
+  width: 100%;
+  top: 60%;
+  text-align: center;
+  color:#fce3cb;
+  text-shadow:  0 0 1px red,0 0 4px black;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 30px;
 }
+.texting .texborder{
+  background-color: #d41e1e;
+  color: #fce3cb;
+  opacity: .8;
+  padding: 25px;
+} */
+
+
+
+
+.pic1{
+  padding-top: 500px;
+}
+.texting{
+  
+  top:200px;
+  padding-top: 500px;
+}
+.texborder{
+  color: #50694c;
+
+  padding-top: 500px;
+}
+
 
 
 
